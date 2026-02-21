@@ -14,9 +14,21 @@ dotenv.config()
 const app = express()
 
 app.use(cors({
-  origin: "https://play-ready.vercel.app",
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true)
+
+    if (
+      origin.includes("vercel.app")
+    ) {
+      return callback(null, true)
+    }
+
+    callback(new Error("Not allowed by CORS"))
+  },
   credentials: true
 }))
+
+
 app.use(express.json())
 app.use("/api/auth", authRoutes)
 app.use("/api/teams", teamRoutes)
