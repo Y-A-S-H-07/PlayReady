@@ -137,22 +137,27 @@ npm run dev
 Frontend runs on:  
 http://localhost:5173
 
-🔒 Security Considerations
-JWT-based authentication
-Protected API routes
-Environment variables for sensitive configuration
-CORS configuration for production
+## 🔒 Security Considerations
 
-🧠 Future Improvements
+- JWT-based authentication
+- Protected API routes
+- Environment variables for sensitive configuration
+- CORS configuration for production
 
-Attendance analytics dashboard
-Captain-only admin controls
-Notification system
-Mobile responsive optimization
-Performance monitoring
-Role-based access enhancements
+---
 
-👤 Author
+## 🧠 Future Improvements
 
-Yash Dabhekar
+- Attendance analytics dashboard
+- Captain-only admin controls
+- Notification system
+- Mobile-responsive optimization
+- Performance monitoring
+- Enhanced role-based access control
+
+---
+
+## 👤 Author
+
+**Yash Dabhekar**  
 Full Stack Developer
