@@ -95,25 +95,47 @@ PlayReady introduces a structured system for managing teams, events, and attenda
 ### Event Detail
 ![Event Detail](screenshots/EventDetail.png)
 
-⚙️ Local Setup Instructions
-1️⃣ Clone Repository
-git clone https://github.com/Y-A-S-H-07/playready.git
-cd playready
+## ⚙️ Local Setup Instructions
 
-2️⃣ Backend Setup
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Y-A-S-H-07/PlayReady.git
+cd PlayReady
+```
+
+---
+
+### 2️⃣ Backend Setup
+
+```bash
 cd backend
 npm install
 npm run dev
+```
 
-Create a .env file inside backend:
+Create a `.env` file inside the `backend` folder:
 
+```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+```
 
-3️⃣ Frontend Setup
+Backend runs on:  
+http://localhost:5001
+
+---
+
+### 3️⃣ Frontend Setup
+
+```bash
 cd frontend
 npm install
 npm run dev
+```
+
+Frontend runs on:  
+http://localhost:5173
 
 🔒 Security Considerations
 JWT-based authentication
